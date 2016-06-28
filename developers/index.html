@@ -93,7 +93,7 @@
                 <h3 style="margin-bottom: 0px;">[GET] /quantiles?<small style="color: #999;">[year=?][state=?][race=?][sex=?][agegroup=?][compare=?]</small></h3>
               </header><i>returns the income amounts for each quantile</i>
               <div style="margin-top: 10px;" class="code-block"><code>
-                  curl https://api.commerce.gov/midaas/quantiles?state=CA&api_key={your_api_key}<br />
+                  curl 'https://api.commerce.gov/midaas/quantiles?state=CA&amp;api_key={your_api_key}'<br />
                   {<br />
                   &nbsp;&nbsp;overall: {<br />
                   &nbsp;&nbsp;&nbsp;&nbsp;5%: 400,</br>
@@ -116,7 +116,7 @@
                 <h3 style="margin-bottom: 0px;">[GET] /income/distribution<small style="color: #999;">?[year=?][state=?][race=?][sex=?][agegroup=?][compare=?]</small></h3>
               </header><i>returns the income amounts for each quantile</i>
               <div style="margin-top: 10px;" class="code-block"><code>
-                  curl https://api.commerce.gov/midaas/distribution?state=CA&amp;race=white&amp;agegroup=26-35&amp;sex=male&api_key={your_api_key}<br />
+                  curl 'https://api.commerce.gov/midaas/distribution?state=CA&amp;race=white&amp;agegroup=25-34&amp;sex=male&amp;api_key={your_api_key}'<br />
                   {<br />
                   &nbsp;&nbsp;$20.00k-$30.00k: 0.1261146303655346,<br/>
                   &nbsp;&nbsp;$120.00k-$130.00k: 0.018000879457209275,<br/>
